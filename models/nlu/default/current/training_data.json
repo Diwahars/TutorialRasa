@@ -1,0 +1,105 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greeting",
+        "text": "hey"
+      },
+      {
+        "intent": "greeting",
+        "text": "hello"
+      },
+      {
+        "intent": "greeting",
+        "text": "hi"
+      },
+      {
+        "intent": "greeting",
+        "text": "heya"
+      },
+      {
+        "intent": "how_are_you",
+        "text": "how are you"
+      },
+      {
+        "intent": "how_are_you",
+        "text": "how is it going"
+      },
+      {
+        "intent": "how_are_you",
+        "text": "how is life"
+      },
+      {
+        "intent": "bye",
+        "text": "bye"
+      },
+      {
+        "intent": "bye",
+        "text": "good bye"
+      },
+      {
+        "intent": "my_name_is",
+        "entities": [
+          {
+            "start": 5,
+            "end": 11,
+            "value": "Martin",
+            "entity": "PERSON"
+          }
+        ],
+        "text": "I am Martin"
+      },
+      {
+        "intent": "my_name_is",
+        "entities": [
+          {
+            "start": 5,
+            "end": 9,
+            "value": "Jack",
+            "entity": "PERSON"
+          }
+        ],
+        "text": "I am Jack"
+      },
+      {
+        "intent": "my_name_is",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "Steven",
+            "entity": "PERSON"
+          }
+        ],
+        "text": "I'm Steven"
+      },
+      {
+        "intent": "my_name_is",
+        "entities": [
+          {
+            "start": 3,
+            "end": 7,
+            "value": "Jack",
+            "entity": "PERSON"
+          }
+        ],
+        "text": "im Jack"
+      },
+      {
+        "intent": "my_name_is",
+        "entities": [
+          {
+            "start": 11,
+            "end": 23,
+            "value": "Martin Novak",
+            "entity": "PERSON"
+          }
+        ],
+        "text": "My name is Martin Novak"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": []
+  }
+}

@@ -1,0 +1,38 @@
+%YAML 1.1
+---
+actions:
+- utter_greet
+- utter_bye
+- utter_how_i_am
+- utter_its_nice_to_meet_you
+config:
+  store_entities_as_slots: true
+entities: []
+forms: []
+intents:
+- greet:
+    use_entities: true
+- bye:
+    use_entities: true
+- how_are_you:
+    use_entities: true
+- my_name_is:
+    use_entities: true
+slots:
+  PERSON:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_bye:
+  - text: Good bye!
+  - text: Bye bye!
+  - text: Seeya!
+  utter_greet:
+  - text: Hi!
+  - text: Hello
+  - text: Hi there!
+  utter_how_i_am:
+  - text: I am fine!!!
+  utter_its_nice_to_meet_you:
+  - text: It's nice to meet you, {PERSON}.

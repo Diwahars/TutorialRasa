@@ -5,6 +5,7 @@ actions:
 - utter_bye
 - utter_how_i_am
 - utter_its_nice_to_meet_you
+- action_get_weather
 config:
   store_entities_as_slots: true
 entities: []
@@ -18,7 +19,13 @@ intents:
     use_entities: true
 - my_name_is:
     use_entities: true
+- get_weather:
+    use_entities: true
 slots:
+  GPE:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
   PERSON:
     auto_fill: true
     initial_value: null

@@ -1,9 +1,11 @@
 {
   "states": [
     "intent_bye",
+    "intent_get_weather",
     "intent_greet",
     "intent_how_are_you",
     "intent_my_name_is",
+    "slot_GPE_0",
     "slot_PERSON_0",
     "prev_action_listen",
     "prev_action_restart",
@@ -12,6 +14,7 @@
     "prev_utter_greet",
     "prev_utter_bye",
     "prev_utter_how_i_am",
-    "prev_utter_its_nice_to_meet_you"
+    "prev_utter_its_nice_to_meet_you",
+    "prev_action_get_weather"
   ]
 }

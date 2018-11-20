@@ -3,13 +3,16 @@
     "action_listen": {
       "slots": []
     },
-    "utter_greet": {
-      "slots": []
-    },
     "utter_bye": {
       "slots": []
     },
+    "action_get_weather": {
+      "slots": []
+    },
     "utter_how_i_am": {
+      "slots": []
+    },
+    "utter_greet": {
       "slots": []
     },
     "utter_its_nice_to_meet_you": {
@@ -27,5 +30,5 @@
     "rasa_core.policies.memoization.MemoizationPolicy",
     "rasa_core.policies.keras_policy.KerasPolicy"
   ],
-  "trained_at": "20181120-132101"
+  "trained_at": "20181120-213052"
 }

@@ -96,10 +96,60 @@
           }
         ],
         "text": "My name is Martin Novak"
+      },
+      {
+        "intent": "get_weather",
+        "text": "what's the weather"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 22,
+            "end": 36,
+            "value": "Czech Republic",
+            "entity": "GPE"
+          }
+        ],
+        "text": "what's the weather in Czech Republic"
+      },
+      {
+        "intent": "get_weather",
+        "text": "what is the weather"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 23,
+            "end": 34,
+            "value": "New Zealand",
+            "entity": "GPE"
+          }
+        ],
+        "text": "what is the weather in New Zealand"
       }
     ],
     "regex_features": [],
     "lookup_tables": [],
-    "entity_synonyms": []
+    "entity_synonyms": [
+      {
+        "value": "Prague",
+        "synonyms": [
+          "Czech Republic",
+          "Czechia",
+          "CR",
+          "CZ"
+        ]
+      },
+      {
+        "value": "Auckland",
+        "synonyms": [
+          "New Zealand",
+          "NZ",
+          "Zealand"
+        ]
+      }
+    ]
   }
 }

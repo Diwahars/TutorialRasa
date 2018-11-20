@@ -13,3 +13,7 @@
 ## my name is
 * my_name_is
 - utter_its_nice_to_meet_you
+
+## get weather
+* get_weather
+- action_get_weather

@@ -1,18 +1,22 @@
 slots:
   PERSON:
     type: text
+  GPE:
+    type: text
 
 intents:
   - greet
   - bye
   - how_are_you
   - my_name_is
+  - get_weather
 
 actions:
   - utter_greet
   - utter_bye
   - utter_how_i_am
   - utter_its_nice_to_meet_you
+  - action_get_weather
 
 templates:
   utter_greet:

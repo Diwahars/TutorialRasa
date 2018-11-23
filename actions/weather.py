@@ -14,13 +14,12 @@ class ActionGetWeather(Action):
         return "action_get_weather"
     
     def run(self, dispatcher, tracker, domain):
-        api_key = "7d407d5c10e54291bcb212138181811" #your apixu key
+        api_key = "" #your apixu key
         client = ApixuClient(api_key)
 
         loc = tracker.get_slot('GPE')
         current = client.getCurrentWeather(q=loc)
-
-        country = current['location']['country']
+        print(loc)
         city = current['location']['name']
         condition = current['current']['condition']['text']
         temperature_c = current['current']['temp_c']
@@ -32,4 +31,4 @@ class ActionGetWeather(Action):
                         and the wind speed is {} mph.""".format(condition, city, temperature_c, humidity, wind_mph)
                         
         dispatcher.utter_message(response)
-        return [SlotSet('GPE',loc)]
+        return [SlotSet('GPE','')]

@@ -17,7 +17,7 @@ run-core:
 	python -m rasa_core.run --enable_api --nlu models/nlu/default/current --core models/dialogue --endpoints endpoints.yml
 
 train-nlu:
-	python trainer.py train-nlu
+	python bot.py train-nlu
 
 train-core:
-	python trainer.py train-dialogue
+	python bot.py train-dialogue

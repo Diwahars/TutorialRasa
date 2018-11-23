@@ -6,16 +6,16 @@
     "utter_bye": {
       "slots": []
     },
-    "action_get_weather": {
-      "slots": []
-    },
     "utter_how_i_am": {
       "slots": []
     },
-    "utter_greet": {
+    "utter_its_nice_to_meet_you": {
       "slots": []
     },
-    "utter_its_nice_to_meet_you": {
+    "action_get_weather": {
+      "slots": []
+    },
+    "utter_greet": {
       "slots": []
     }
   },
@@ -30,5 +30,5 @@
     "rasa_core.policies.memoization.MemoizationPolicy",
     "rasa_core.policies.keras_policy.KerasPolicy"
   ],
-  "trained_at": "20181120-213052"
+  "trained_at": "20181122-220457"
 }
